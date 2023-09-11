@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .forgot-password {
+      text-align: right;
+    }
+    .photo{
+        margin-top: 60px;
+        display: block;
+        height: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+.button2{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.box{
+    margin-top: 20px;
+    background-color: lightgray;
+}
+a{
+
+color: black;
+}
+  </style>
+</head>
+<body>
+  <img src="./css-task6.jpg" class="photo">
+  <form action="/login" method="POST">
+    <label>Username</label><br>
+    <input type="text" name="username" placeholder="Enter Username">
+    <label>Password</label><br>
+    <input type="password" name="password" placeholder="Enter Password">
+    <button class="button" type="submit">Login</button>
+    <input type="checkbox" name="remember" placeholder="Remember me">
+    <label>Remember me</label><br>
+    <div class="box">
+        <button class="button2" type="submit">Cancel</button>
+        <a href="#">Forgot password?</a>
+      </div>
+  </form>
+</body>
+</html>
